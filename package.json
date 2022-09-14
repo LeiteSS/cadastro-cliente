@@ -1,0 +1,27 @@
+{
+  "name": "cadastro-cliente",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido para aula de desenvolvimento web II",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeiteSS/cadastro-cliente.git"
+  },
+  "keywords": [
+    "CRUD;",
+    "DEV_WEBII"
+  ],
+  "author": "Leite, S. S.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeiteSS/cadastro-cliente/issues"
+  },
+  "homepage": "https://github.com/LeiteSS/cadastro-cliente#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
