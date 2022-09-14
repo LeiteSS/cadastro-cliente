@@ -12,7 +12,21 @@ const app = express();
   * ROTA GET: para retornar dados
 */
 app.get("/", function(req, resp) {
-  resp.send("Hellow wolrd!");
+  resp.send("Bem vindo ao app");
+})
+
+/*
+  * ROTA GET: para retornar contatos
+*/
+app.get("/contatos", function(req, resp) {
+  resp.send("Pagina de contatos do app!");
+})
+
+/*
+  * ROTA GET: para retornar produtos
+*/
+app.get("/produtos", function(req, resp) {
+  resp.send("Pagina de produtos do app!");
 })
 
 // esta sempre deve ser a ultima linha quando usamos o express
