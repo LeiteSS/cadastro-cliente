@@ -41,6 +41,10 @@ console.log(insert);
 const deleta = await db.deleteUsuario(1);
 console.log(deleta);
 
+// update
+const update = await db.updateUsuario(1, {nome: "Zero", senha: ""});
+console.log(update);
+
 // esta sempre deve ser a ultima linha quando usamos o express
 app.listen(8081, function() {
   console.log("Servidor funcionando na url http://localhost:8081");
