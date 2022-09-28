@@ -42,7 +42,7 @@ const deleta = await db.deleteUsuario(1);
 console.log(deleta);
 
 // update
-const update = await db.updateUsuario(1, {nome: "Zero", senha: ""});
+const update = await db.updateUsuario(1, {nome: "Zero", senha: "hhjdhjjdsd7368"});
 console.log(update);
 
 // esta sempre deve ser a ultima linha quando usamos o express
