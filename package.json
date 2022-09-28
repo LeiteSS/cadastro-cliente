@@ -23,6 +23,7 @@
   "homepage": "https://github.com/LeiteSS/cadastro-cliente#readme",
   "dependencies": {
     "express": "^4.18.1",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "mysql2": "^2.3.3"
   }
 }
