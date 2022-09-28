@@ -8,3 +8,12 @@ async function connect() {
 
   return connection;
 }
+
+async function selectUsuario() {
+  const conn = await connect();
+  const [rows] = await conn.query('SELECT * FROM usuario;');
+
+  return rows;
+}
+
+module.exports = {selectUsuario}
