@@ -24,4 +24,11 @@ async function insertUsuario(usuario) {
   return await conn.query(sql, values);
 }
 
+async function deleteUsuario(id) {
+  const conn = await connect();
+  const sql = 'DELETE FROM usuario where id=?;';
+
+  return await conn.query(sql, [id]);
+}
+
 module.exports = {selectUsuario, insertUsuario}
