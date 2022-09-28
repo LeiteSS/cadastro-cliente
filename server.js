@@ -27,7 +27,15 @@ app.get("/contatos", function(req, resp) {
 */
 app.get("/produtos", function(req, resp) {
   resp.send("Pagina de produtos do app!");
-})
+});
+
+// select
+const select = await db.selectUsuario();
+console.log(select);
+
+// insert
+const insert = await db.insertUsuario({nome: "Zé", senha: "uihdssauihus783"});
+console.log(insert);
 
 // esta sempre deve ser a ultima linha quando usamos o express
 app.listen(8081, function() {
