@@ -1,10 +1,5 @@
-/*var http = require('http');
-console.log(http);
-
-http.createServer().listen(8081);
-console.log("O servidor está funcionando");*/
-
 const express = require("express");
+const db = require('./model/data/db.js');
 
 const app = express();
 
@@ -30,19 +25,19 @@ app.get("/produtos", function(req, resp) {
 });
 
 // select
-const select = await db.selectUsuario();
+const select = db.selectUsuario();
 console.log(select);
 
 // insert
-const insert = await db.insertUsuario({nome: "Zé", senha: "uihdssauihus783"});
+const insert = db.insertUsuario({nome: "Zé", senha: "uihdssauihus783"});
 console.log(insert);
 
 // delete
-const deleta = await db.deleteUsuario(1);
+const deleta = db.deleteUsuario(1);
 console.log(deleta);
 
 // update
-const update = await db.updateUsuario(1, {nome: "Zero", senha: "hhjdhjjdsd7368"});
+const update = db.updateUsuario(1, {nome: "Zero", senha: "hhjdhjjdsd7368"});
 console.log(update);
 
 // esta sempre deve ser a ultima linha quando usamos o express
