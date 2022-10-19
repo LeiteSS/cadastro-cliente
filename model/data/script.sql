@@ -1,5 +1,5 @@
-create database webII;
-use webII;
+create database webii;
+use webii;
 
 create table Usuario (
   id int primary key auto_increment,
